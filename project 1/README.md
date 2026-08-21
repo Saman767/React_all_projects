@@ -48,4 +48,4 @@ src/
 
 [![Live Demo](https://img.shields.io/badge/Live_Demo-Netlify-00C7B7?style=for-the-badge&logo=netlify)](https://YOUR-NETLIFY-LINK.netlify.app)
 
-👉 **Live Demo:** [Click Here to View Live Project](https://saman-react-project-01.netlify.app/)
+👉 **Live Demo:** [Click Here to View Live Project] https://saman-react-project-01.netlify.app/
