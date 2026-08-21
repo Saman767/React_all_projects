@@ -1,4 +1,4 @@
-<img width="1022" height="992" alt="image" src="https://github.com/user-attachments/assets/d73bd312-018a-4d75-8358-7d37600482cc" /># 👟 Brand Landing Page (Nike / Brand Page)
+
 
 A modern component-driven landing page built with **React** and **Vite**. 
 
