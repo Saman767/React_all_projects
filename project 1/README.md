@@ -1,4 +1,4 @@
-# 👟 Brand Landing Page (Nike / Brand Page)
+<img width="1022" height="992" alt="image" src="https://github.com/user-attachments/assets/d73bd312-018a-4d75-8358-7d37600482cc" /># 👟 Brand Landing Page (Nike / Brand Page)
 
 A modern component-driven landing page built with **React** and **Vite**. 
 
@@ -42,3 +42,10 @@ src/
 ├── App.css             # Global CSS variables & body fonts
 ├── main.jsx            # Application entry point
 └── index.css           # Base styles and resets
+
+
+# 👟 Brand Landing Page (Nike / Brand Page)
+
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Netlify-00C7B7?style=for-the-badge&logo=netlify)](https://YOUR-NETLIFY-LINK.netlify.app)
+
+👉 **Live Demo:** [Click Here to View Live Project](https://saman-react-project-01.netlify.app/)
