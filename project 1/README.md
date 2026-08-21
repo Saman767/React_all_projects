@@ -1,16 +1,44 @@
-# React + Vite
+# 👟 Brand Landing Page (Nike / Brand Page)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern component-driven landing page built with **React** and **Vite**. 
 
-Currently, two official plugins are available:
+Rather than writing all code in a single file, this project follows industry-standard **Component-Driven Development (CDD)** principles, featuring clean modularization and feature-based folder organization.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Key Learnings & Skills Demonstrated
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+By building this project step-by-step from scratch, I mastered the following core React & Frontend concepts:
 
-## Expanding the ESLint configuration
+1. **Component-Driven Architecture:**
+   - Moved away from monolithic single-file structures to breaking down the UI into clear, reusable functional components (e.g., `Navigation`, `HeroSection`).
+   - Kept `App.jsx` clean, serving purely as a layout orchestrator.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. **Co-location & File Organization:**
+   - Organized components alongside their respective styles for scalability (`components/Nav.jsx` + `Nav.css`).
+   - Built a modular folder structure that can easily scale to dozens of components in large-scale applications.
+
+3. **Global CSS Variables & Design Tokens:**
+   - Established global design rules in `App.css` using `:root` CSS variables (e.g., `--red`, `--gray`) and imported typography (`Poppins`).
+   - Applied global CSS inheritance so component-level styles can consume global variables seamlessly without duplicating code.
+
+4. **Asset Management:**
+   - Learned the difference between Vite's `public/` directory static serving and `src/assets/` bundled imports.
+
+5. **Practical Debugging & Troubleshooting:**
+   - Identified and resolved real-world issues such as unlinked CSS stylesheets, missing imports, and property typos.
+
+---
+
+## 📂 Project Directory Structure
+
+```text
+src/
+├── assets/             # Logos, brand assets, and icons
+├── components/         # Independent React components
+│   ├── Nav.jsx         # Navigation Bar component
+│   └── Nav.css         # Component-specific styles
+├── App.jsx             # Main App layout component
+├── App.css             # Global CSS variables & body fonts
+├── main.jsx            # Application entry point
+└── index.css           # Base styles and resets
