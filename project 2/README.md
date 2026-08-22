@@ -1,16 +1,56 @@
-# React + Vite
+# 📞 Contact Us Page (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, dynamic, and fully responsive Contact Page built with **React.js** and **Vite**. This project focuses on mastering React state management, form handling, component reusability, and modular styling.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Key Features
 
-## React Compiler
+* **Interactive Form Handling:** Real-time state updates using the `useState` hook.
+* **Reusable Components:** Modular `<Button />` component configured with custom `props` and variants (solid vs. outlined).
+* **React Icons Integration:** Integrated clean visual indicators using `react-icons`.
+* **CSS Modules:** Scoped component styling using `*.module.css` to prevent global class collisions.
+* **Controlled UI Rerendering:** State updates seamlessly display submitted data directly on the UI without reloading the page.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **Frontend Library:** React.js
+* **Build Tool:** Vite
+* **Styling:** CSS Modules
+* **Icons:** React Icons (`react-icons/md`, `react-icons/sl`)
+
+---
+
+## 📖 Core Concepts Learned
+
+1. **State Management (`useState`):** Managing input states dynamically and capturing form inputs on submission.
+2. **Form Event Prevention:** Using `event.preventDefault()` to stop automatic browser page reloads.
+3. **Props & Destructuring:** Passing text, icons, and conditional styling flags (`isOutline`) to reusable components.
+4. **CSS Module Architecture:** Importing styles as scoped JavaScript objects (`styles.className`).
+
+---
+
+## 📁 Project Structure
+
+```text
+project 2/
+├── public/
+│   └── images/
+├── src/
+│   ├── components/
+│   │   ├── Button/
+│   │   │   ├── Button.jsx
+│   │   │   └── Button.module.css
+│   │   ├── ContactForm/
+│   │   │   ├── ContactForm.jsx
+│   │   │   └── ContactForm.module.css
+│   │   ├── ContactHeader/
+│   │   │   ├── ContactHeader.jsx
+│   │   │   └── ContactHeader.module.css
+│   │   └── Navigation/
+│   │       ├── Nav.jsx
+│   │       └── Nav.module.css
+│   ├── App.jsx
+│   └── main.jsx
