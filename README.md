@@ -16,4 +16,6 @@ I'm practicing React by building projects, starting with the basics (components,
  ##project 1 :   https://saman-react-project-01.netlify.app/
  project 2:  https://supportsytem.netlify.app/
 ---
+project 3:https://react-dice-gameweb.netlify.app/
+
 **Author:** Saman 
