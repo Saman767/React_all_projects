@@ -1,16 +1,57 @@
-# React + Vite
+# 🎲 Dice Game (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+An interactive, logic-heavy **Dice Game** built with **React.js**, **Vite**, and **Styled Components**. This project focuses on managing game state flow, handling complex UI validations, and implementing dynamic CSS-in-JS styling.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Key Features
 
-## React Compiler
+* **Dynamic Page Switching:** Single-page application navigation using conditional rendering without page reloads.
+* **Score Tracking & Logic:** Dynamic score calculations based on correct/incorrect guesses (Adds die value on match, deducts 2 points on mismatch).
+* **Selection Validation:** Built-in error handling that restricts dice rolling until a target number is selected.
+* **Rules Toggle:** Expandable/collapsible rules overlay implemented via short-circuit evaluation.
+* **CSS-in-JS (Styled Components):** Dynamic component styling with props and styled component inheritance.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the Oxlint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+* **Frontend Library:** React.js
+* **Build Tool:** Vite
+* **Styling:** Styled Components (`styled-components`)
+* **Icons & Assets:** Vector Assets & Custom PNGs
+
+---
+
+## 📖 Core Concepts Learned
+
+1. **State Lifting:** Managing shared states (`score`, `selectedNumber`, `error`) in parent components and passing handlers to child nodes.
+2. **Styled Components & Props:** Applying conditional CSS based on props (e.g., active number selection boxes changing color).
+3. **Array Mapping (`.map()`):** Dynamically rendering number selector boxes from arrays.
+4. **Validation Logic:** Short-circuiting user execution flows when required inputs are missing.
+5. **State Resetting:** Clearing game state values cleanly to allow instant replays.
+
+---
+
+## 📁 Project Structure
+
+```text
+project 3/
+├── public/
+│   └── images/
+│       ├── dice/
+│       │   ├── dice_1.png
+│       │   └── ...
+│       └── img1.png.png
+├── src/
+│   ├── components/
+│   │   ├── GamePlay.jsx
+│   │   ├── NumberSelector.jsx
+│   │   ├── RollDice.jsx
+│   │   ├── Rules.jsx
+│   │   ├── Startgame.jsx
+│   │   └── TotalScore.jsx
+│   ├── styled/
+│   │   └── Button.js
+│   ├── App.jsx
+│   └── main.jsx
